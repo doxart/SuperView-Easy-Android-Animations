@@ -1,4 +1,4 @@
-[![JitPack - SuperView](https://img.shields.io/badge/JitPack-SuperView-2ea44f?style=for-the-badge)](https://jitpack.io/#doxart/SuperView)
+[![JitPack - SuperView](https://img.shields.io/badge/JitPack-SuperView-2ea44f?style=for-the-badge)](https://jitpack.io/#doxart/SuperView) [![License - MIT](https://img.shields.io/badge/License-MIT-3454D1?style=for-the-badge)](https://github.com/doxart/SuperView/blob/master/LICENSE)
 
 # SuperView Library
 

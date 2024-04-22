@@ -1,3 +1,5 @@
+[![JitPack - SuperView](https://img.shields.io/badge/JitPack-SuperView-2ea44f)]([https://](https://jitpack.io/#doxart/SuperView))
+
 # SuperView Library
 
 SuperView is a lightweight Android library that simplifies and speeds up animations on views. With SuperView, you can easily add animations to your Android app's views without the complexity of manual animation handling.

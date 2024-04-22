@@ -14,7 +14,7 @@ SuperView is a lightweight Android library that simplifies and speeds up animati
 To use SuperView in your Android project, add the following dependency to your app's `build.gradle` file:
 
 ```gradle
-implementation "com.github.doxart:SuperView:0.8"
+implementation "com.github.doxart:SuperView:TAG"
 ```
 
 ## Usage

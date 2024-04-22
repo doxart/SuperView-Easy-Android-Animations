@@ -28,6 +28,13 @@ SuperAnim anim = new SuperAnim(context, SuperAnim.FADE_IN).apply();
 
 SuperView.getInstance(context).into(binding.myAnimatedView).with(anim).show();
 ```
+Also you can hide view:
+
+```java
+SuperAnim anim = new SuperAnim(context, SuperAnim.FADE_IN).apply();
+
+SuperView.getInstance(context).into(binding.myAnimatedView).with(anim).hide();
+```
 
 #### Custom Animation
 
@@ -35,14 +42,6 @@ SuperView.getInstance(context).into(binding.myAnimatedView).with(anim).show();
 SuperAnim anim = new SuperAnim(context, R.anim.custom_fade_in).apply();
 
 SuperView.getInstance(context).into(binding.myAnimatedView).with(anim).show();
-```
-
-Also you can hide view:
-
-```java
-SuperAnim anim = new SuperAnim(context, R.anim.custom_fade_in).apply();
-
-SuperView.getInstance(context).into(binding.myAnimatedView).with(anim).hide();
 ```
 
 #### Advanced Animation

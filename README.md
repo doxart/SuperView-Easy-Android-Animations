@@ -41,7 +41,7 @@ SuperView.getInstance(context).into(binding.myAnimatedView).with(anim).hide();
 #### Custom Animation
 
 ```java
-SuperAnim anim = new SuperAnim(context, R.anim.custom_fade_in).apply();
+SuperAnim anim = new SuperAnim(context, new AnimationType("MyCustomAnimation", R.anim.custom_fade_in).apply();
 
 SuperView.getInstance(context).into(binding.myAnimatedView).with(anim).show();
 ```

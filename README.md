@@ -4,7 +4,7 @@
 
 SuperView is a lightweight Android library that simplifies and speeds up animations on views. With SuperView, you can easily add animations to your Android app's views without the complexity of manual animation handling.
 
-![SuperView Demo](https://github.com/doxart/SuperView/blob/master/demo.gif)
+![SuperView Demo](https://github.com/doxart/SuperView/blob/master/demo--0.gif)
 ![SuperView Demo-1](https://github.com/doxart/SuperView/blob/master/demo-1.gif)
 
 ## Features

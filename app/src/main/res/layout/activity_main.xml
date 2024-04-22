@@ -7,12 +7,105 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:boxCornerRadiusBottomEnd="13dp"
+        app:boxCornerRadiusBottomStart="13dp"
+        app:boxCornerRadiusTopEnd="13dp"
+        app:boxCornerRadiusTopStart="13dp"
+        android:id="@+id/durationInput"
+        android:hint="Duration"
+        app:startIconDrawable="@drawable/ic_timer_24"
+        style="@style/Widget.Material3.TextInputLayout.FilledBox"
+        app:boxStrokeWidth="0dp"
+        app:boxStrokeWidthFocused="0dp"
+        app:boxBackgroundColor="#EFEEEE">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="number"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkInputLay"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        android:layout_below="@id/durationInput"
+        app:singleSelection="true">
+
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Hide"
+            app:buttonTint="@color/black"
+            android:id="@+id/hideBt"/>
+
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show"
+            app:buttonTint="@color/black"
+            android:layout_weight="1"
+            android:checked="true"
+            android:id="@+id/showBt"/>
+
+    </RadioGroup>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner"
+        android:layout_margin="10dp"
+        android:layout_below="@id/checkInputLay"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start"
+        android:layout_below="@id/spinner"
+        android:layout_margin="10dp"
+        app:cornerRadius="13dp"
+        android:id="@+id/startBt"
+        app:backgroundTint="@color/black"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:boxCornerRadiusBottomEnd="13dp"
+        app:boxCornerRadiusBottomStart="13dp"
+        app:boxCornerRadiusTopEnd="13dp"
+        app:boxCornerRadiusTopStart="13dp"
+        android:hint="Duration"
+        app:startIconDrawable="@drawable/ic_timer_24"
+        style="@style/Widget.Material3.TextInputLayout.FilledBox"
+        app:boxStrokeWidth="0dp"
+        app:boxStrokeWidthFocused="0dp"
+        app:boxBackgroundColor="#EFEEEE">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/duration"
+            android:text="1000"
+            android:digits="0123456789"
+            android:inputType="number"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="256dp"
-        app:cardBackgroundColor="@color/black"
+        app:cardBackgroundColor="#4D75FF"
         android:layout_margin="25dp"
-        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
         android:visibility="visible"
         android:id="@+id/myAnimatedView"
         app:cardCornerRadius="24dp">

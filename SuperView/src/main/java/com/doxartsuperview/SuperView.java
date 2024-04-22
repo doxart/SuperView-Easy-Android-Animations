@@ -5,6 +5,7 @@ import android.os.Handler;
 import android.util.Log;
 import android.view.View;
 import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 
 import androidx.annotation.NonNull;
 
@@ -16,6 +17,18 @@ public class SuperView {
     AnimationListener animationListener;
     private Handler handler;
     private Runnable runnable;
+
+    public SuperAnim getSuperAnim() {
+        return superAnim;
+    }
+
+    public Animation getAnimation() {
+        return animation;
+    }
+
+    public void setAnimation(AnimationType animation) {
+        this.animation = AnimationUtils.loadAnimation(context, animation.getId());
+    }
 
     @NonNull
     public static SuperView getInstance(Context context) {
@@ -51,13 +64,14 @@ public class SuperView {
                 @Override
                 public void onAnimationStart(Animation animation) {
                     if (animationListener != null) animationListener.onStart();
+                    playing = true;
                 }
 
                 @Override
                 public void onAnimationEnd(Animation animation) {
                     if (animationListener != null) animationListener.onFinish();
                     view.setVisibility(View.GONE);
-                    view = null;
+                    playing = false;
                 }
 
                 @Override
@@ -85,10 +99,13 @@ public class SuperView {
             public void run() {
                 currentTimeInMs += 100;
                 if (animationListener != null) animationListener.onTick(currentTimeInMs);
-                if (view != null) handler.postDelayed(this, 100);
+                if (playing) handler.postDelayed(this, 100);
+                else currentTimeInMs = 0;
             }
         };
     }
+
+    boolean playing = false;
 
     private void startTicker() {
         handler.post(runnable);
@@ -103,12 +120,13 @@ public class SuperView {
                 public void onAnimationStart(Animation animation) {
                     if (animationListener != null) animationListener.onStart();
                     view.setVisibility(View.VISIBLE);
+                    playing = true;
                 }
 
                 @Override
                 public void onAnimationEnd(Animation animation) {
                     if (animationListener != null) animationListener.onFinish();
-                    view = null;
+                    playing = false;
                 }
 
                 @Override

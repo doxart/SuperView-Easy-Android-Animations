@@ -42,7 +42,7 @@ afterEvaluate {
                 from components.findByName('release')
                 groupId = 'com.github.doxart'
                 artifactId = 'superview'
-                version = '0.4'
+                version = '0.5'
             }
         }
     }

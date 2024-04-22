@@ -8,12 +8,25 @@
     tools:context=".MainActivity">
 
     <androidx.cardview.widget.CardView
-        android:layout_width="128dp"
-        android:layout_height="128dp"
+        android:layout_width="match_parent"
+        android:layout_height="256dp"
         app:cardBackgroundColor="@color/black"
+        android:layout_margin="25dp"
         android:layout_centerInParent="true"
-        android:visibility="gone"
+        android:visibility="visible"
         android:id="@+id/myAnimatedView"
-        app:cardCornerRadius="24dp"/>
+        app:cardCornerRadius="24dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Medium.com"
+            android:textSize="32dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+
+    </androidx.cardview.widget.CardView>
 
 </RelativeLayout>

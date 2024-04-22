@@ -1,4 +1,4 @@
-[![JitPack - SuperView](https://img.shields.io/badge/JitPack-SuperView-2ea44f)]([https://](https://jitpack.io/#doxart/SuperView))
+[![JitPack - SuperView](https://img.shields.io/badge/JitPack-SuperView-2ea44f?style=for-the-badge)](https://jitpack.io/#doxart/SuperView)
 
 # SuperView Library
 

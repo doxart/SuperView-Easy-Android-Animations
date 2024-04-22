@@ -77,7 +77,7 @@ SuperView.getInstance(context)
 
 ## License
 
-This project is licensed under the MIT License - [LICENSE](https://github.com/doxart/SuperView/blob/main/LICENSE) see the  file for details.
+This project is licensed under the MIT License - [LICENSE](https://github.com/doxart/SuperView/blob/master/LICENSE) see the  file for details.
 
 
 ## Contributing
